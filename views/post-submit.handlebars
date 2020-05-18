@@ -1,0 +1,36 @@
+<h1>POST request recieved:</h1>
+<table>
+  <caption>URL Query String Data</caption>
+<thead>
+    <tr>
+        <th>Parameter</th>
+        <th>Value</th>
+    </tr>
+</thead>
+<tbody>
+      {{#each queryData}}
+      <tr>
+          <td>{{this.name}}</td>
+          <td>{{this.value}}</td>
+      </tr>
+      {{/each}}
+  </tbody>
+  </table>
+  <br>
+  <table>
+    <caption>Request Body Data</caption>
+  <thead>
+      <tr>
+          <th>Parameter</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+    {{#each bodyData}}
+      <tr>
+          <td>{{this.name}}</td>
+          <td>{{this.value}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+    </table>
